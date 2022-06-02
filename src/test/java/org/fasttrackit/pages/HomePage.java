@@ -13,7 +13,7 @@ public class HomePage extends PageObject {
             private WebElementFacade loginLink;
             @FindBy(id = "search")
             private WebElementFacade searchField;
-            @FindBy(css = "[title]='Search']")
+            @FindBy(css = ".search-button")
             private WebElementFacade searchIcon;
 
                     public void clickAccountLink(){
