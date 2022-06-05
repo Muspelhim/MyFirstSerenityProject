@@ -1,5 +1,7 @@
 package org.fasttrackit.features.search;
 
+import org.fasttrackit.pages.CheckoutPage;
+import org.fasttrackit.steps.serenity.CheckoutSteps;
 import org.junit.Test;
 
 public class CheckoutTest extends BaseTest{
@@ -11,6 +13,16 @@ public class CheckoutTest extends BaseTest{
         productSteps.selectProductFromList("Silver Desert Necklace");
         cartSteps.clickAddToCart();
         cartSteps.verifySuccessMessage("Silver Desert Necklace");
+        cartSteps.proceedToCheckout();
+        checkoutSteps.billingDetails();
+
+
+
+
+
+
+
+
 
     }
 }

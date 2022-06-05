@@ -6,28 +6,24 @@ import net.thucydides.core.steps.ScenarioSteps;
 import org.fasttrackit.pages.*;
 
 public class CheckoutSteps extends ScenarioSteps{
-    private HomePage homePage;
-    private ProductPage productPage;
+
     private CartPage cartPage;
-    private LoginPage loginPage;
-    private LoginSteps loginSteps;
-    private SearchSteps searchSteps;
-    private ProductSteps productSteps;
     private CheckoutPage checkoutPage;
+    private LoginPage loginPage;
 
 
-    @Step
-    private void goToCheckoutPage(){
-     cartPage.doCheckout();
-    }
-    @Step
-    public void doCheckout(){
-        checkoutPage.doCheckout();
-    }
+   @Step
+    public void billingDetails(){
+        checkoutPage.enterDetails();
+   }
 
 
 
-}
+   }
+
+
+
+
 
 
 

@@ -11,6 +11,7 @@ public class CartPage extends PageObject {
     @FindBy(css = "body > div > div.page > div.main-container.col1-layout > div > div > div.cart.display-single-price > div.page-title.title-buttons > ul > li > button")
     private WebElementFacade proceedToCheckout;
 
+
     public void verifySuccessMessage(String productName){
         successMessage.shouldContainOnlyText(productName +" was added to your shopping cart.");
 

@@ -19,5 +19,12 @@ public class CartSteps extends ScenarioSteps {
         cartPage.verifySuccessMessage(productName);
 
     }
+    @Step
+    public void proceedToCheckout(){
+        cartPage.doCheckout();
+    }
+
+
+
 
 }

@@ -11,5 +11,7 @@ public class CartTest extends BaseTest{
    productSteps.selectProductFromList("Silver Desert Necklace");
    cartSteps.clickAddToCart();
    cartSteps.verifySuccessMessage("Silver Desert Necklace");
+   cartSteps.proceedToCheckout();
+   checkoutSteps.billingDetails();
    }
 }
