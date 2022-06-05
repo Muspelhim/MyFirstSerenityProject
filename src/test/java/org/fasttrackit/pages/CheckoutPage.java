@@ -18,6 +18,8 @@ public class CheckoutPage extends PageObject {
     private WebElementFacade lastContinueButton;
     @FindBy(css = "#review-buttons-container > button")
     private WebElementFacade reviewOrder;
+    @FindBy(css = ".sub-title")
+    private WebElementFacade verifySuccesfulOrder;
 
 
 
@@ -41,6 +43,9 @@ public class CheckoutPage extends PageObject {
     public void hitPlaceOrder(){
         reviewOrder.click();
     }
+    public void doOrderVerification(){
+        verifySuccesfulOrder.containsOnlyText("THANK YOU FOR YOUR PURCHASE!");
+    }
 
 
 
@@ -53,6 +58,7 @@ public class CheckoutPage extends PageObject {
         hitNextContinue();
         hitLastContinueButton();
         hitPlaceOrder();
+
 
 
 
